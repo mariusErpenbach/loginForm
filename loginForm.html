@@ -10,13 +10,33 @@
 </head>
 <body>
     <form>
-        <i class="fab fa-facebook"></i>
-        <img
-        src="./img/google-icon-seeklogo.com.ai"
-    alt="triangle with all three sides equal"
-    height="87"
-    width="100" />
-        <i src="/img/google-icon-seeklogo.com.ai"></i>
+        <div id="socialLogins">
+            <div>
+        <i class="fab fa-facebook"  class="socialIcon"> </i>
+        <button class="socialmediaLoginButton" id="facebookLogin">
+            Facebook login
+      </button>
+    </div>
+    <div>
+      <img id="googleIcon" class="socialIcon"src="./img/transparent-g-icon-google-icon-logo-icon-5dbe0416651e28.5198751215727339744142.png">
+        <button class="socialmediaLoginButton" id="googleLogin">
+            Google login
+    </button>
+    </div>
+    <div>
+    <img id="twitterIcon" class="socialIcon" src="./img/—Pngtree—twitter icon_3584901.png">
+        <button class="socialmediaLoginButton" id="twitterLogin">
+            Twitter login
+    </button>
+    </div>
+</div>
+
+        <aside>
+            <p>Sign in with</p>
+            <input id="nameInput" type="text" placeholder="Username or email"/>
+            <input id="passwordInput" type="text" placeholder="Password"/>
+            <input id="rememberMeButton" type="checkbox"/><lable for="RememberMeButton">Remember Me</lable><button id="loginButton" type="button" value="send">LOGIN</button>
+        </aside>
     </form>
 </body>
 </html>

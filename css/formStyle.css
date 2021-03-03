@@ -1,4 +1,50 @@
+
 .fa-facebook{
-    color:#507BBF;
-    font-size:4em;
+    position:relative;
+    right:-4rem;
+    top:1rem;
+    font-size:3.4rem;
+}
+#googleIcon{
+    position:relative;
+    right:-4rem;
+    top:1.4rem;
+    height:3.35rem;
+    width:3.35rem;
+}
+#twitterIcon{
+    position:relative;
+    right:-4rem;
+    top:1.4rem;
+    height:3.4rem;
+    width:3.4rem;
+  
+}
+.socialmediaLoginButton{
+    text-align: end;
+    height:4em;
+    width:15em;
+    color:white;
+    margin-top:1%;
+}
+#facebookLogin{
+    background-color:#507BBF;
+    border-radius:0.01%;
+}
+#googleLogin{
+    background-color:#DE4931;
+    border-style:solid;
+    border-color:#DE4931;
+    border-radius:0.01%;
+}
+#twitterLogin{
+    background-color:#64CCF1;
+    border-radius:0.01%;
+}
+#socialLogins{
+    display:flex;
+    width:35%;
+    border-style:dotted;
+    flex-direction: column;
+    position:relative;
 }
