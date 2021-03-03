@@ -33,9 +33,18 @@
 
         <aside id="inputSection">
             <h1 class="asideHeading">Sign in with</h1>
-            <input id="nameInput" type="text" placeholder="           Username or email"/>
-            <input id="passwordInput" type="text" placeholder="          Password"/>
-            <input id="rememberMeButton" type="checkbox"/><lable for="RememberMeButton">Remember Me</lable><button id="loginButton" type="button" value="send">LOGIN</button>
+            <div id="nameBox">
+                <i class="fas fa-user"></i>
+            <input id="nameInput" type="text" placeholder="Username or email"/>
+            </div>
+            <div id="passwordBox">
+                <i class="fas fa-lock"></i>
+            <input id="passwordInput" type="text" placeholder="Password"/>
+             </div>
+             <div id="loginBox">
+            <input id="rememberMeButton" type="checkbox"/><lable for="RememberMeButton">Remember Me</lable>
+            <button id="loginButton" type="button" value="send">LOGIN</button>
+        </div>
         </aside>
     </form>
 </body>
