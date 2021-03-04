@@ -1,74 +1,89 @@
 form{
     display:flex;
-    border-style:dotted;
+    flex-direction: row;
+    position:relative;
     border-color:indigo;
     text-align:center;
+    width:40%;
+    height:15vw;
 }
-.fa-facebook{
-    position:relative;
-    right:-4rem;
-    top:1rem;
-    font-size:3.4rem;
-}
-#googleIcon{
-    position:relative;
-    right:-4rem;
-    top:1.4rem;
-    height:3.35rem;
-    width:3.35rem;
-}
-#twitterIcon{
-    position:relative;
-    right:-4rem;
-    top:1.4rem;
-    height:3.4rem;
-    width:3.4rem;
-  
+#socialLogins{
+    display:flex;
+    width:50%;
+    height:auto;
+    flex-direction: column;
+
 }
 .socialmediaLoginButton{
+    margin-top:10%;
     text-align: end;
-    height:4em;
+    height:4rem;
     width:15em;
     color:white;
-    margin-top:1%;
+    border-style:solid;
 }
 #facebookLogin{
     background-color:#507BBF;
     border-radius:0.01%;
+    
+    width:80%;
+}
+.fa-facebook{
+    position:relative;
+    top:10%;
+    right:10%;
+    font-size:3.5rem;
 }
 #googleLogin{
+   
     background-color:#DE4931;
     border-style:solid;
     border-color:#DE4931;
     border-radius:0.01%;
+   
+    width:80%;
+}
+#googleIcon{
+    position:relative;
+    right:20%;
+    top:10%;
+    height:3rem;
+    width:3rem;
 }
 #twitterLogin{
+    
     background-color:#64CCF1;
     border-radius:0.01%;
+    
+    width:80%;
 }
-#socialLogins{
-    display:flex;
-    width:35%;
-    border-style:dotted;
-    flex-direction: column;
+#twitterIcon{
     position:relative;
+   right:20%;
+    top:10%;
+    height:3rem;
+    width:3rem;   
 }
 #nameInput{
     width:15rem;
     height:1rem;
     border-width:0 0 1px 0;
     margin-top:5%;
+    text-align: center;
 }
 #passwordInput{
     width:15rem;
     height:1rem;
     border-width:0 0 1px 0;
-
-    margin-top:5%;
+    text-align: center;
+    margin-top:8%;
 }
 ::placeholder {
     position:relative;
-    left:1.5rem;
+    left:-3rem;
+  }
+  #passwordInput::placeholder{
+      left:-4.55rem;
   }
 .fa-user{
     position:relative;
@@ -79,10 +94,35 @@ form{
     left:1.2rem;
 }
 #inputSection{
-    width:35%;
+    width:50%;
+    height:15vw;
     display:flex;
     flex-direction: column;
-    border-style:dotted;
     border-color:green;
     position:relative;
+    text-align:center;
+}
+#loginSubmitBox{
+    margin-top:12%;
+}
+#loginButton{
+    background-color:#65B1FF;
+    font-style:solid;
+    color:white;
+}
+#linksBelow{
+    position:relative;
+    top:50%;
+    margin-top:30%;
+    text-align:center;
+    width:39%;
+    right:50%;
+}
+#registerLink{
+   
+    
+    margin-top:5%;
+    border-style:solid;
+    border-width:0 1px 0 0;
+    padding:5px;
 }
