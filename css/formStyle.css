@@ -1,149 +1,176 @@
 
 form {
-    margin-right:auto;
-    margin-left:auto;
+ 
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   border-style:dotted;
   position: relative;
   border-color: indigo;
   text-align: center;
-  width: auto;
- height:25rem;
+  width:30%;
+  border-width: 1px 1px 0px 1px;
 }
-/* form>*{
-    flex:1 1 1;
-} */
+
 #socialLogins {
+   
   display: flex;
-  height: 60%;
-  width: auto;
+  justify-content: center;
+  height: 80%;
+ width:40%;
   flex-direction: column;
-  border-style: dotted;
+    border-style:dotted;
   border-color: red;
 }
 .socialmediaLoginButton {
+    align-self: center;
+    justify-content:center;
+    align-content:center;
   text-align: end;
-  height:10%;
-  min-width:10rem;
+  margin-top:10%;
+  height:20%;
+  width:85%;
   color: white;
   border-style: solid;
+  border-radius:2%;
 }
 #facebookLogin {
   background-color: #507bbf;
-  border-radius: 0.01%;
+  
+
 }
 .fa-facebook {
-  font-size: 3.5rem;
+
 }
 #googleLogin {
   background-color: #de4931;
   border-style: solid;
   border-color: #de4931;
-  border-radius: 0.01%;
 }
 #googleIcon {
-  height: 60%;
-  width: auto;
+  height: auto;
+  width: 20%;
 }
 #twitterLogin {
   background-color: #64ccf1;
 }
 #twitterIcon {
-  height: 60%;
-  width: auto;
+  height: auto;
+  width: 20%;
 }
 #orSection{
-    margin-left:1%;
-    margin-right:1%;
     display:flex;
     flex-direction: column;
     text-align:center;
-    height:60%;
-    border-style:dotted;
     border-color:black;
+    opacity:40%;
+    width:5%;
 }
 #or{
     border-radius:100%;
     border-style:solid;
     position:relative;
     top:35%;
-    
-   
     align-self: center;
     background-color:white;
 }
 .hLine{
+    margin-top:3%;
     position:absolute;
     align-self:center;
-    width:1px;
-    height:60%;
+    width:0.1%;
+    height:70%;
     background-color:black;
-    opacity:0.7;
-}
-#asideHeading {
-  margin-top: 8%;
-}
-#nameInput {
-  min-width: 10rem;
-  height: 1rem;
-  border-width: 0 0 1px 0;
-  margin-top: 15%;
-  text-align: center;
-}
-#passwordInput {
-  min-width: 10rem;
-  height: 1rem;
-  border-width: 0 0 1px 0;
-  text-align: center;
-  margin-top: 8%;
-}
-/* ::placeholder {
-  position: relative;
-  left: -3rem;
-}
-#passwordInput::placeholder {
-  left: -4.55rem;
-} */
-.fa-user {
-  height: 15%;
-  width: auto;
-}
-.fa-lock {
-  height: 15%;
-  width: auto;
+    
 }
 #inputSection {
-  border-style: dotted;
-  width: auto;
-  height:60%;
-  display: flex;
-  flex-direction: column;
-  border-color: green;
-  text-align: center;
+
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    border-color: green;
+    text-align: center;
+   border-style:dotted;
+  }
+#asideHeading {
+  font-size:50%;
 }
-#loginSubmitBox {
-  margin-top: 20%;
+
+.textInput {
+  width: 50%;
+  height: auto;
+  border-width: 0 0 1px 0;
+
+  
 }
+::placeholder {
+ font-size:60%;
+    position:relative;
+    left:10%;
+}
+/* #passwordInput::placeholder {
+ 
+}  */
+.fa-user {
+position:relative;
+left:8%;
+font-size:5%;
+}
+.fa-lock {
+    position:relative;
+left:8%;
+font-size:5%;
+}
+
+
+#loginSubmitBox{
+   
+    height:auto;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    font-size:50%;
+    }
 #loginButton {
   background-color: #65b1ff;
   font-style: solid;
   color: white;
+    align-self:center;
+    margin-left:7%;
+    font-size:0.5%;
 }
+#rememberMeButton{
+    align-self:center;
+    margin-left:10%;
+}
+
 #linksBelow {
+    margin-top:6.3%;
+    font-size:50%;
     display:flex;
     flex-direction: row;
-  position: relative;
-  text-align: center;
-  width: auto;
+    justify-content: center;
+  width: 100%;
+  height:auto;
   border-style:dotted;
- 
+   
 }
 #registerLink {
+    margin-left:-2%;
   border-style: solid;
-  border-width: 0 1px 0 0;
+  border-width: 0 0.1px 0 0;
   align-self: center;
-  width:120%;
+ 
 }
 #forgottenLink{
+    
     align-self: center;
+}
+a:link{
+    text-decoration:none;
+}
+a:visited{
+    text-decoration: none;
 }
