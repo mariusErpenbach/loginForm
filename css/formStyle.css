@@ -8,15 +8,16 @@ form {
   border-style:dotted;
   position: relative;
   border-color: indigo;
-  text-align: center;
-  width:30%;
-  border-width: 1px 1px 0px 1px;
+    align-content: center;
+  width:25vw;
+  height:auto;
+  border-width: 1px 1px 1px 1px;
 }
 
 #socialLogins {
-   
+ 
   display: flex;
-  justify-content: center;
+  flex-wrap:wrap;
   height: 80%;
  width:40%;
   flex-direction: column;
@@ -24,59 +25,61 @@ form {
   border-color: red;
 }
 .socialmediaLoginButton {
+    display:flex;
     align-self: center;
-    justify-content:center;
-    align-content:center;
-  text-align: end;
-  margin-top:10%;
-  height:20%;
-  width:85%;
+    align-items:center;
+    flex-wrap:wrap;
+  margin:5%;
+ min-height:20%;
+ min-width:70%;
   color: white;
   border-style: solid;
   border-radius:2%;
 }
+.socialmediaLoginButton>p{
+position:relative;
+margin-left:25%;
+font-size:50%;
+}
 #facebookLogin {
   background-color: #507bbf;
-  
-
+ 
 }
-.fa-facebook {
-
+.socialIcon{
+    height: auto;
+    width: 5%;
+   position:absolute;
+    align-self:center;
+;
 }
+
 #googleLogin {
   background-color: #de4931;
   border-style: solid;
   border-color: #de4931;
 }
-#googleIcon {
-  height: auto;
-  width: 20%;
-}
 #twitterLogin {
   background-color: #64ccf1;
 }
-#twitterIcon {
-  height: auto;
-  width: 20%;
-}
+
 #orSection{
     display:flex;
     flex-direction: column;
     text-align:center;
     border-color:black;
     opacity:40%;
-    width:5%;
+    width:10%;
 }
 #or{
     border-radius:100%;
     border-style:solid;
     position:relative;
-    top:35%;
+    top:40%;
     align-self: center;
     background-color:white;
 }
 .hLine{
-    margin-top:3%;
+    margin-top:5%;
     position:absolute;
     align-self:center;
     width:0.1%;
@@ -99,14 +102,15 @@ form {
 }
 
 .textInput {
-  width: 50%;
+  width: 80%;
   height: auto;
   border-width: 0 0 1px 0;
 
   
 }
 ::placeholder {
- font-size:60%;
+    flex-wrap:nowraP;
+    font-size:50%;
     position:relative;
     left:10%;
 }
@@ -126,29 +130,34 @@ font-size:5%;
 
 
 #loginSubmitBox{
-   
-    height:auto;
+   border-style:dotted;
+    min-width:100%;
     display:flex;
-    flex-wrap:wrap;
+    
     flex-direction: row;
     font-size:50%;
     }
 #loginButton {
   background-color: #65b1ff;
   font-style: solid;
+  width:100%;
   color: white;
     align-self:center;
+    justify-self: center;
     margin-left:7%;
     font-size:0.5%;
 }
+#rememberMePhrase{
+    font-size:50%;
+}
 #rememberMeButton{
-    align-self:center;
-    margin-left:10%;
+    height:auto;
+   min-width:5%;
 }
 
 #linksBelow {
     margin-top:6.3%;
-    font-size:50%;
+
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -158,7 +167,7 @@ font-size:5%;
    
 }
 #registerLink {
-    margin-left:-2%;
+    
   border-style: solid;
   border-width: 0 0.1px 0 0;
   align-self: center;
