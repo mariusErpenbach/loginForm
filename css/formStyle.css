@@ -1,56 +1,55 @@
-
 form {
- 
+    font-family: 'Comfortaa', cursive;
+    margin-top:10%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  border-style:dotted;
+  border-style: solid;
   position: relative;
-  border-color: indigo;
-    align-content: center;
-  width:25vw;
-  height:auto;
-  border-width: 1px 1px 1px 1px;
+  border-color: grey;
+  align-content: center;
+  width: 500px;
+  height:200px;
+  border-width:5%;
 }
 
 #socialLogins {
- 
+   position:relative;
+   top:10%;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   height: 80%;
- width:40%;
+  width: 40%;
   flex-direction: column;
-    border-style:dotted;
+  border-style: dotted;
   border-color: red;
 }
 .socialmediaLoginButton {
-    display:flex;
-    align-self: center;
-    align-items:center;
-    flex-wrap:wrap;
-  margin:5%;
- min-height:20%;
- min-width:70%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5%;
+  min-height: 20%;
+  min-width: 70%;
   color: white;
   border-style: solid;
-  border-radius:2%;
+  border-radius: 2%;
 }
-.socialmediaLoginButton>p{
-position:relative;
-margin-left:25%;
-font-size:50%;
+.socialmediaLoginButton > p {
+  position: relative;
+  margin-left: 30%;
+  font-size: 50%;
 }
 #facebookLogin {
   background-color: #507bbf;
- 
 }
-.socialIcon{
-    height: auto;
-    width: 5%;
-   position:absolute;
-    align-self:center;
-;
+.socialIcon {
+  height: auto;
+  width: 5%;
+  position: absolute;
+  align-self: center;
 }
 
 #googleLogin {
@@ -62,124 +61,137 @@ font-size:50%;
   background-color: #64ccf1;
 }
 
-#orSection{
-    display:flex;
-    flex-direction: column;
-    text-align:center;
-    border-color:black;
-    opacity:40%;
-    width:10%;
+#orSection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-color: black;
+  opacity: 40%;
+  width: 10%;
 }
-#or{
-    border-radius:100%;
-    border-style:solid;
-    position:relative;
-    top:40%;
-    align-self: center;
-    background-color:white;
+#or {
+  border-radius: 100%;
+  border-style: solid;
+  position: relative;
+  
+  top: 40%;
+  align-self: center;
+  background-color: white;
 }
-.hLine{
-    margin-top:5%;
-    position:absolute;
-    align-self:center;
-    width:0.1%;
-    height:70%;
-    background-color:black;
-    
+.hLine {
+  margin-top: 5%;
+  position: absolute;
+  align-self: center;
+  width: 0.1%;
+  height: 70%;
+  background-color: black;
 }
 #inputSection {
-
-    width: 40%;
-
-    display: flex;
-    flex-direction: column;
-    border-color: green;
-    text-align: center;
-   border-style:dotted;
-  }
+    position:relative;
+    top:10%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-color: green;
+  text-align: center;
+  border-style: dotted;
+}
 #asideHeading {
-  font-size:50%;
+    padding:10%;
+    position:relative;
+    border-style:dotted;
+  font-size: 50%;
 }
 
 .textInput {
-  width: 80%;
+    border-style:none;
+    padding:3%;
+  width: 60%;
   height: auto;
-  border-width: 0 0 1px 0;
-
   
 }
 ::placeholder {
-    flex-wrap:nowraP;
-    font-size:50%;
-    position:relative;
-    left:10%;
+  flex-wrap: nowraP;
+  font-size: 50%;
+  position: relative;
+  left: 10%;
 }
 /* #passwordInput::placeholder {
  
 }  */
+.inputBox{
+    border-width:0.5px;
+    width:70%;
+    align-self:center;
+    border-style:solid;
+    border-width: 0 0 1px 0;
+}
 .fa-user {
-position:relative;
-left:8%;
-font-size:5%;
+
+  font-size: 5%;
 }
 .fa-lock {
-    position:relative;
-left:8%;
-font-size:5%;
+
+  font-size: 5%;
 }
 
-
-#loginSubmitBox{
-   border-style:dotted;
-    min-width:100%;
-    display:flex;
-    
-    flex-direction: row;
-    font-size:50%;
-    }
+#loginSubmitBox {
+    position:relative;
+    top:20%;
+  border-style: dotted;
+  min-width: 70%;
+  height:auto;
+  display: flex;
+  flex-wrap:nowrap;
+    align-self:center;
+  flex-direction: row;
+  font-size: 50%;
+}
 #loginButton {
   background-color: #65b1ff;
   font-style: solid;
-  width:100%;
+  height:auto;
+  width: 35%;
   color: white;
-    align-self:center;
-    justify-self: center;
-    margin-left:7%;
-    font-size:0.5%;
+  align-self: center;
+  justify-self: center;
+  margin-left: 7%;
+ font-size:0.1%;
 }
-#rememberMePhrase{
-    font-size:50%;
+#rememberMePhrase {
+  font-size: 50%;
 }
-#rememberMeButton{
-    height:auto;
-   min-width:5%;
+#rememberMeButton {
+  height: auto;
+  min-width: 5%;
 }
 
 #linksBelow {
-    margin-top:6.3%;
-
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-  width: 100%;
-  height:auto;
-  border-style:dotted;
+    padding:1%;
+  margin-top: 6.3%;
+  font-size:20%;
+    position:relative;
+    top:-3%;
    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border-style: dotted;
 }
 #registerLink {
-    
+    margin-left:-1.5%;
   border-style: solid;
   border-width: 0 0.1px 0 0;
   align-self: center;
- 
 }
-#forgottenLink{
-    
-    align-self: center;
+#forgottenLink {
+  align-self: center;
 }
-a:link{
-    text-decoration:none;
+a:link {
+  text-decoration: none;
 }
-a:visited{
-    text-decoration: none;
+a:visited {
+  text-decoration: none;
 }
