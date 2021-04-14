@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/formStyle-grid.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/058434cd7c.js" crossorigin="anonymous"></script>
     <title>loginForm</title>
 </head>
+
 <body>
     <form>
         <div id="socialLogins">
-           
-      
-        <button class="socialmediaLoginButton" id="facebookLogin">
-            <img id="facebookIcon" class="socialIcon"src="./img/1920px-Facebook_f_logo_(2019).svg.png">
-            <p>Facebook login</p>
-      </button>
-   
-    
-     
-        <button class="socialmediaLoginButton" id="googleLogin">
-            <img id="googleIcon" class="socialIcon"src="./img/transparent-g-icon-google-icon-logo-icon-5dbe0416651e28.5198751215727339744142.png">
-            <p>Facebook login</p>
-    </button>
-    
-   
-  
-        <button class="socialmediaLoginButton" id="twitterLogin">
-            <img id="twitterIcon" class="socialIcon" src="./img/—Pngtree—twitter icon_3584901.png">
-            <p>Facebook login</p>
-    </button>
-</div>
-<section id="orSection">
-  <div class="hLine"></div>  <p id="or"> or </p> 
-</section>
-    <p></p>
+
+
+            <button class="socialmediaLoginButton" id="facebookLogin">
+                <img id="facebookIcon" class="socialIcon" src="./img/1920px-Facebook_f_logo_(2019).svg.png">
+                <p>Facebook login</p>
+            </button>
+
+
+
+            <button class="socialmediaLoginButton" id="googleLogin">
+                <img id="googleIcon" class="socialIcon"
+                    src="./img/transparent-g-icon-google-icon-logo-icon-5dbe0416651e28.5198751215727339744142.png">
+                <p>Facebook login</p>
+            </button>
+
+
+
+            <button class="socialmediaLoginButton" id="twitterLogin">
+                <img id="twitterIcon" class="socialIcon" src="./img/—Pngtree—twitter icon_3584901.png">
+                <p>Facebook login</p>
+            </button>
+        </div>
+        <section id="orSection">
+            <div class="hLine"></div>
+            <p id="or"> or </p>
+        </section>
+        <p></p>
         <aside id="inputSection">
             <heading id="asideHeading">Sign in with</heading>
             <div class="inputBox">
                 <i class="fas fa-user"></i>
-            <input class="textInput" type="text" placeholder="Username or email"/> 
+                <input class="textInput" type="text" placeholder="Username or email" />
             </div>
             <div class="inputBox">
                 <i class="fas fa-lock"></i>
-            <input class="textInput" type="text" placeholder="Password"/>
-             </div>
-             
-             <div id="loginSubmitBox">
-            <input id="rememberMeButton" type="checkbox"/><lable for="rememberMeButton"><p id="rememberMePhrase">Remember Me</p></lable>
-            <button id="loginButton" type="button" value="send">LOGIN</button>
-            
-        </div>
+                <input class="textInput" type="text" placeholder="Password" />
+            </div>
+
+            <div id="loginSubmitBox">
+                <input id="rememberMeButton" type="checkbox" />
+                <lable for="rememberMeButton">
+                    <p id="rememberMePhrase">Remember Me</p>
+                </lable>
+                <button id="loginButton" type="button" value="send">LOGIN</button>
+            </div>
         </aside>
         <section id="linksBelow">
             <a id="registerLink" href="registerpage.html">Register now &nbsp</a>
             <a id="forgottenLink" href="superpage.html">&nbsp Forgotten?</a>
         </section>
     </form>
-
+    <script>
+        let clicked = false;
+        document.querySelector('.socialIcon').addEventListener("click",()=>{
+        clicked= !clicked;
+            console.log(clicked);
+            if(clicked){
+                this.style.cssText = "display:none;"
+            } else{
+                this.style.cssText = "display:none;"
+            }
+        })
+    </script>
 </body>
+
 </html>
